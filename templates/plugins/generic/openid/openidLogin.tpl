@@ -139,12 +139,12 @@
 									{if isset($customBtnTxt)}
 										{$customBtnTxt}
 									{else}
-										{{translate key="plugins.generic.openid.select.provider.$name"}}
+										 {translate key="plugins.generic.openid.select.provider.$name"}
 									{/if}
 								</span>
 							{else}
 								<img class="w-4 h-4" src="{$openIDImageURL}{$name}-sign-in.png" alt="{$name}"/>
-								<p>{{translate key="plugins.generic.openid.select.provider.$name"}}</p>
+								<p>{translate key="plugins.generic.openid.select.provider.$name"}</p>
 							{/if}
 						</div>
 					</a>
