@@ -24,3 +24,29 @@
     @apply scrollbar-thumb-gray-600 scrollbar-track-gray-800;
   }
 }*/
+@layer utilities {
+  .pdf-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .doi-text {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  .skip-link {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  .skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0.5rem;
+  }
+}

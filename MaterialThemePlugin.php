@@ -11,6 +11,12 @@
  * @brief Material theme
  */
 
+/**
+ * Author: Munir Abbasi
+ * Author URL: https://syntaxhouse.com
+ * Theme URL: https://github.com/munir-abbasi/material-theme-modifed
+ */
+
 namespace APP\plugins\themes\material;
 
 use APP\core\Application;
@@ -114,6 +120,23 @@ class MaterialThemePlugin extends \PKP\plugins\ThemePlugin
                 [
                     'value' => 'System Default',
                     'label' => __('plugins.themes.material.option.font.systemDefault'),
+                ],
+                // --- System Fonts (no external requests) ---
+                [
+                    'value' => 'Segoe UI',
+                    'label' => 'Windows System (Segoe UI)',
+                ],
+                [
+                    'value' => 'SF Pro',
+                    'label' => 'macOS/iOS System (SF Pro)',
+                ],
+                [
+                    'value' => 'System Roboto',
+                    'label' => 'Android System (Roboto)',
+                ],
+                [
+                    'value' => 'Ubuntu',
+                    'label' => 'Ubuntu (Linux)',
                 ],
                 // --- Local Fonts ---
                 [
@@ -426,7 +449,7 @@ class MaterialThemePlugin extends \PKP\plugins\ThemePlugin
             return "$content</a>";
         } else {
             return <<<HTML
-                <a @mouseover="open = true" @mouseleave="open = false" href="{$params['url']}"
+                <a @mouseover="open = true" @mouseleave="open = false" href="{$params['url']}" role="button" aria-haspopup="true" x-bind:aria-expanded="open"
                     class="flex h-8 items-center text-slate-500 justify-center rounded-xl shadow-md shadow-black/5 ring-1
                         ring-black/5 dark:bg-slate-700 dark:ring-inset dark:ring-white/5 px-3 text-sm
                         dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300">
@@ -777,6 +800,14 @@ class MaterialThemePlugin extends \PKP\plugins\ThemePlugin
                 'Monaco FB' => 'monacofb',     // Base filename assumed (e.g., monacofb.woff2)
             ];
 
+            // Define System Font stacks (no external requests)
+            $systemFonts = [
+                'Segoe UI' => '"Segoe UI", Tahoma, Geneva, Verdana, sans-serif',
+                'SF Pro' => '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+                'System Roboto' => 'Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif',
+                'Ubuntu' => 'Ubuntu, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+            ];
+
             $request = Application::get()->getRequest();
             $baseUrl = $request->getBaseUrl();
             $pluginPath = $this->getPluginPath();
@@ -829,11 +860,16 @@ class MaterialThemePlugin extends \PKP\plugins\ThemePlugin
                 */
             }
 
-            // Add inline style to apply the font-family to the body
-            $fontStack = $selectedFont === 'System Default' ?
-                'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"' :
-                "'" . $selectedFont . "', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""; // Ensure the selected font is first
+            // Determine font stack for body
+            if (array_key_exists($selectedFont, $systemFonts)) {
+                $fontStack = $systemFonts[$selectedFont];
+            } elseif ($selectedFont === 'System Default') {
+                $fontStack = 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"';
+            } else {
+                $fontStack = '\'' . $selectedFont . '\', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"';
+            }
 
+            // Add inline style to apply the font-family to the body
             $fontStyles .= "body { font-family: {$fontStack}; }\n";
 
             // Add all generated styles (including @font-face and body rule) to header
