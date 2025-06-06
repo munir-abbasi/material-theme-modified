@@ -19,6 +19,9 @@ msgstr "このテーマは、デフォルトのテーマを実装しています
 msgid "plugins.themes.material.option.font.label"
 msgstr "フォント"
 
+msgid "plugins.themes.material.option.font.system"
+msgstr "System Default"
+
 msgid "plugins.themes.material.option.colour.label"
 msgstr "色"
 
