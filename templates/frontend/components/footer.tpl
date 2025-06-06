@@ -37,7 +37,7 @@
       <div class="text-sm">
         <p class="copyright">&copy; Platform & Workflow by: <a href="{url page="about" op="aboutThisPublishingSystem"}" class="hover:text-slate-500">Open Journal Systems</a></p>
         <div class="credits">
-          Designed by <a href="https://github.com/madi-nuralin/material" class="hover:text-slate-500">Material Theme</a>
+          Designed by <a href="https://github.com/munir-abbasi/material-theme-modifed" class="hover:text-slate-500">Material Theme</a> by <a href="https://syntaxhouse.com" class="hover:text-slate-500">Munir Abbasi</a>
         </div>
       </div>
     </div>
