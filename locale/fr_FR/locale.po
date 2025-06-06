@@ -19,6 +19,9 @@ msgstr "Ce thème implémente le thème par défaut."
 msgid "plugins.themes.material.option.font.label"
 msgstr "Fonte"
 
+msgid "plugins.themes.material.option.font.system"
+msgstr "System Default"
+
 msgid "plugins.themes.material.option.colour.label"
 msgstr "Couleur"
 
