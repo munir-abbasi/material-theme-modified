@@ -20,6 +20,9 @@ msgstr "This theme implements the material theme."
 msgid "plugins.themes.material.option.font.label"
 msgstr "Font"
 
+msgid "plugins.themes.material.option.font.system"
+msgstr "System Default"
+
 msgid "plugins.themes.material.option.colour.label"
 msgstr "Colour"
 
