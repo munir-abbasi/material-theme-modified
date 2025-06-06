@@ -1,10 +1,10 @@
 # Material Theme
 A theme plugin for [PKP/OJS](https://pkp.sfu.ca/ojs/)
 
-![version](https://img.shields.io/github/v/release/madi-nuralin/material)
-![license](https://img.shields.io/github/license/madi-nuralin/material)
-<a href="https://github.com/madi-nuralin/material/issues?q=is%3Aopen+is%3Aissue" target="_blank">![GitHub issues open](https://img.shields.io/github/issues/madi-nuralin/material.svg)</a>
-<a href="https://github.com/madi-nuralin/material/issues?q=is%3Aissue+is%3Aclosed" target="_blank">![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/madi-nuralin/material.svg)</a>
+![version](https://img.shields.io/github/v/release/munir-abbasi/material-theme-modifed)
+![license](https://img.shields.io/github/license/munir-abbasi/material-theme-modifed)
+<a href="https://github.com/munir-abbasi/material-theme-modifed/issues?q=is%3Aopen+is%3Aissue" target="_blank">![GitHub issues open](https://img.shields.io/github/issues/munir-abbasi/material-theme-modifed.svg)</a>
+<a href="https://github.com/munir-abbasi/material-theme-modifed/issues?q=is%3Aissue+is%3Aclosed" target="_blank">![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/munir-abbasi/material-theme-modifed.svg)</a>
 
 ![Снимок экрана 2025-02-16 003310](https://github.com/user-attachments/assets/542b534f-56fb-48e4-b02d-a8db0a9b1e58)
 
@@ -16,7 +16,9 @@ This theme can be installed through the **Plugin Gallery** in Open Journal Syste
 
 ## Contribution
 
-Developer: *Madi Nuralin* ([@madi-nuralin](https://github.com/madi-nuralin))
+Developer: *Munir Abbasi* ([@munir-abbasi](https://github.com/munir-abbasi))
+Website: [syntaxhouse.com](https://syntaxhouse.com)
+Source: [github.com/munir-abbasi/material-theme-modifed](https://github.com/munir-abbasi/material-theme-modifed)
 
 ## Version compatibility with OJS:
 

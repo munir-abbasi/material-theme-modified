@@ -12,4 +12,7 @@
  *
  */
 
+// Modified by Munir Abbasi - https://syntaxhouse.com
+// Source: https://github.com/munir-abbasi/material-theme-modifed
+
 return new \APP\plugins\themes\material\MaterialThemePlugin();
