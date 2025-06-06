@@ -22,6 +22,9 @@ msgstr "Este tema implementa la estética por defecto."
 msgid "plugins.themes.material.option.font.label"
 msgstr "Fuente"
 
+msgid "plugins.themes.material.option.font.system"
+msgstr "System Default"
+
 msgid "plugins.themes.material.option.colour.label"
 msgstr "Color"
 
