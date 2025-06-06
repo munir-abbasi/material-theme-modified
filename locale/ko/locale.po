@@ -19,6 +19,9 @@ msgstr "이 테마를 기본 테마로 적용합니다."
 msgid "plugins.themes.material.option.font.label"
 msgstr "세례반"
 
+msgid "plugins.themes.material.option.font.system"
+msgstr "System Default"
+
 msgid "plugins.themes.material.option.colour.label"
 msgstr "색상"
 
