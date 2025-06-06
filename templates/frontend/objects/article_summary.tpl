@@ -27,13 +27,14 @@
 {/if}
 
 <div class="flex space-x-4">
+	{if $publication->getLocalizedData('coverImage')}
     <div class="w-20 h-20 flex-shrink-0 rounded-md border border-2 border-dashed border-slate-200 dark:border-slate-700">
-        {if $publication->getLocalizedData('coverImage')}
-            <a {if $journal}href="{url journal=$journal->getPath() page="article" op="view" path=$articlePath}"{else}href="{url page="article" op="view" path=$articlePath}"{/if}>
-                {assign var="coverImage" value=$publication->getLocalizedData('coverImage')}
-                <img class="w-full h-full object-contain" src="{$publication->getLocalizedCoverImageUrl($article->getData('contextId'))|escape}" alt="{$coverImage.altText|escape|default:''}" style="margin: 0 !important;">
-            </a>
-        {/if}
+        <a {if $journal}href="{url journal=$journal->getPath() page="article" op="view" path=$articlePath}"{else}href="{url page="article" op="view" path=$articlePath}"{/if}>
+            {assign var="coverImage" value=$publication->getLocalizedData('coverImage')}
+            <img class="w-full h-full object-contain" src="{$publication->getLocalizedCoverImageUrl($article->getData('contextId'))|escape}" alt="{$coverImage.altText|escape|default:''}" style="margin: 0 !important;">
+        </a>
+    </div>
+    {/if}
     </div>
 
     <div class="flex-1">
