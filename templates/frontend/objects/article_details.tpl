@@ -165,9 +165,9 @@
 						{translate key="semicolon" label=$translatedDOI}
 					</h2>
 					<span class="value">
-						<a href="{$doiUrl}" class="break-words">
-							{$doiUrl}
-						</a>
+						  <a href="{$doiUrl}" class="break-all">
+                                                       {$doiUrl}
+                                               </a>
 					</span>
 				</section>
 			{/if}
