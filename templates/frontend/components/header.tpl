@@ -20,9 +20,9 @@
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}"
 	xml:lang="{$currentLocale|replace:"_":"-"}"
-	class="font-{$activeTheme->getOption('fontFamily')}" 
-	{literal}
-  		x-data="{ darkMode: localStorage.getItem('darkMode') || localStorage.setItem('darkMode', 'light') }" 
+        {if $activeTheme->getOption('fontFamily')}class="font-{$activeTheme->getOption('fontFamily')}"{/if}
+        {literal}
+                x-data="{ darkMode: localStorage.getItem('darkMode') || localStorage.setItem('darkMode', 'light') }"
   		x-init="$watch('darkMode', val => localStorage.setItem('darkMode', val))" 
   		x-bind:class="{'dark': darkMode === 'dark' || (darkMode === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)}"
   	{/literal}>
