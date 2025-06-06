@@ -14,9 +14,11 @@ A custom theme for the OJS
 ## Installation
 This theme can be installed through the **Plugin Gallery** in Open Journal Systems. If it's not available in the plugin gallery, you may need to update Open Journal Systems to a compatible version.
 
-## Contribution
+# Contribution
 
 Developer: *Madi Nuralin* ([@madi-nuralin](https://github.com/madi-nuralin))
+Modified by: *Munir Abbasi* ([https://syntaxhouse.com](https://syntaxhouse.com))
+Theme URL: [https://github.com/munir-abbasi/material-theme-modifed](https://github.com/munir-abbasi/material-theme-modifed)
 
 ## Version compatibility with OJS:
 
