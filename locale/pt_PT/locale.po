@@ -15,6 +15,9 @@ msgstr ""
 msgid "plugins.themes.material.name"
 msgstr "Material Tema"
 
+msgid "plugins.themes.material.option.font.system"
+msgstr "System Default"
+
 msgid "plugins.themes.material.description"
 msgstr "Este tema implementa o tema material."
 
