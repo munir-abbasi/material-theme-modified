@@ -1,3 +1,8 @@
+
+MaterialThemePlugin.php
++9
+-1
+
 <?php
 
 /**
@@ -5,6 +10,10 @@
  *
  * Copyright (c) 2021 Madi Nuralin
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ *
+ * Modified by: Munir Abbasi
+ * Theme URL: https://github.com/munir-abbasi/material-theme-modifed
+ * Author Website: https://syntaxhouse.com
  *
  * @class MaterialThemePlugin
  *
@@ -90,13 +99,13 @@ class MaterialThemePlugin extends \PKP\plugins\ThemePlugin
             'default' => 'sky',
         ]);
 
-        $this->addOption('fontFamily', 'FieldOptions', [
+       $this->addOption('fontFamily', 'FieldOptions', [
             'type' => 'radio',
             'label' => __('plugins.themes.material.option.font.label'),
             'options' => [
                 [
-                    'value' => 'comic-sans',
-                    'label' => 'Comic Sans',
+                    'value' => '',
+                    'label' => __('plugins.themes.material.option.font.system'),
                 ],
                 [
                     'value' => 'comic-neue',
@@ -119,7 +128,7 @@ class MaterialThemePlugin extends \PKP\plugins\ThemePlugin
                     'label' => 'Roboto Serif',
                 ],
             ],
-            'default' => 'comic-neue',
+            'default' => '',
         ]);
 
         // Add usage stats display options
