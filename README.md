@@ -16,9 +16,10 @@ This theme can be installed through the **Plugin Gallery** in Open Journal Syste
 
 # Contribution
 
-Developer: *Madi Nuralin* ([@madi-nuralin](https://github.com/madi-nuralin))
-Modified by: *Munir Abbasi* ([https://syntaxhouse.com](https://syntaxhouse.com))
-Theme URL: [https://github.com/munir-abbasi/material-theme-modifed](https://github.com/munir-abbasi/material-theme-modifed)
+**Developer:** *Madi Nuralin* ([@madi-nuralin](https://github.com/madi-nuralin))  
+**Modified by:** *Munir Abbasi* ([syntaxhouse.com](https://syntaxhouse.com))  
+**Theme URL:** [https://github.com/munir-abbasi/material-theme-modifed](https://github.com/munir-abbasi/material-theme-modifed)
+
 
 ## Version compatibility with OJS:
 
