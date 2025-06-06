@@ -24,6 +24,9 @@ msgstr "Реалізує тему оформлення Material."
 msgid "plugins.themes.material.option.font.label"
 msgstr "Шрифт"
 
+msgid "plugins.themes.material.option.font.system"
+msgstr "System Default"
+
 msgid "plugins.themes.material.option.colour.label"
 msgstr "Колір"
 
