@@ -29,6 +29,9 @@ msgstr "Негізгі бетте журнал туралы қысқаша ақ�
 msgid "plugins.themes.material.option.font.label"
 msgstr "Қаріп"
 
+msgid "plugins.themes.material.option.font.system"
+msgstr "System Default"
+
 msgid "plugins.themes.material.option.colour.description"
 msgstr "Жоғарғы колонтитулдың түсін орнату."
 
