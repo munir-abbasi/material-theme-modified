@@ -21,6 +21,9 @@ msgstr "Toto téma implementuje výchozí téma."
 msgid "plugins.themes.material.option.font.label"
 msgstr "Písmo"
 
+msgid "plugins.themes.material.option.font.system"
+msgstr "System Default"
+
 msgid "plugins.themes.material.option.colour.label"
 msgstr "Barva"
 
