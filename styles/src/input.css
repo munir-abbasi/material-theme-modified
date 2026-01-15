@@ -1,0 +1,171 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@layer base {
+	@font-face {
+		font-family: 'Comic Sans';
+		src: url('../../fonts/ComicSans-Regular.ttf');
+	}
+
+	@font-face {
+		font-family: 'Comic Neue';
+		src: url('../../fonts/ComicNeue-Regular.ttf');
+	}
+
+	@font-face {
+		font-family: 'Cardo';
+		src: url('../../fonts/Cardo-Regular.ttf');
+	}
+
+	@font-face {
+		font-family: 'Cormorant';
+		src: url('../../fonts/Cormorant-Regular.ttf');
+	}
+
+	@font-face {
+		font-family: 'Old Standard TT';
+		src: url('../../fonts/OldStandardTT-Regular.ttf');
+	}
+
+	@font-face {
+		font-family: 'Roboto Serif';
+		src: url('../../fonts/RobotoSerif-VariableFont.ttf');
+	}
+}
+
+@layer components {
+	/* Improved input styling with better contrast */
+	input {
+		@apply rounded-md;
+		@apply border-gray-300;
+		@apply shadow-sm;
+		@apply focus:border-blue-500;
+		@apply focus:ring;
+		@apply focus:ring-blue-200;
+		@apply focus:ring-opacity-50;
+		@apply bg-white;
+		@apply text-gray-900;
+	}
+
+	/* Light theme with blue accent */
+	:root {
+		--color-primary: 29 78 216; /* blue-600 */
+		--color-primary-light: 59 130 246; /* blue-500 */
+		--color-primary-dark: 30 64 175; /* blue-700 */
+		--color-bg: 255 255 255; /* white */
+		--color-text: 17 24 39; /* gray-900 */
+		--color-text-secondary: 55 65 81; /* gray-700 */
+		--color-border: 209 213 219; /* gray-300 */
+		--color-card-bg: 255 255 255; /* white */
+	}
+
+	/* Dark theme with improved contrast */
+	.dark {
+		--color-primary: 96 165 250; /* blue-400 */
+		--color-primary-light: 147 197 253; /* blue-300 */
+		--color-primary-dark: 59 130 246; /* blue-500 */
+		--color-bg: 15 23 42; /* slate-900 */
+		--color-text: 241 245 249; /* slate-100 */
+		--color-text-secondary: 148 163 184; /* slate-400 */
+		--color-border: 51 65 85; /* slate-700 */
+		--color-card-bg: 30 41 59; /* slate-800 */
+	}
+
+	/* Apply theme colors */
+	body {
+		background-color: rgb(var(--color-bg));
+		color: rgb(var(--color-text));
+	}
+
+	/* Better button styling */
+	.btn-primary {
+		@apply bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition-colors duration-200;
+	}
+
+	.btn-secondary {
+		@apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded transition-colors duration-200 dark:bg-slate-700 dark:hover:bg-slate-600 dark:text-slate-200;
+	}
+
+	/* Enhanced card styling */
+	.card {
+		@apply bg-white rounded-lg shadow-md p-6 border border-gray-200 dark:bg-slate-800 dark:border-slate-700;
+	}
+
+	/* Improved link styling */
+	a {
+		@apply text-blue-600 hover:text-blue-800 underline dark:text-blue-400 dark:hover:text-blue-300;
+	}
+
+	/* Better form elements */
+	select, textarea {
+		@apply rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-200 focus:ring-opacity-50 bg-white text-gray-900 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200;
+	}
+
+	/* Improved focus states for accessibility */
+	button:focus, input:focus, select:focus, textarea:focus {
+		@apply outline-none ring-2 ring-blue-500 ring-opacity-50 dark:ring-blue-400;
+	}
+
+	/* Better heading contrast */
+	h1, h2, h3, h4, h5, h6 {
+		@apply text-gray-900 dark:text-slate-100;
+	}
+
+	/* Improved text contrast */
+	p, span, div {
+		@apply text-gray-700 dark:text-slate-300;
+	}
+
+	/* Better table styling */
+	table {
+		@apply w-full text-left text-sm;
+	}
+
+	th {
+		@apply py-3 px-4 font-semibold text-gray-900 bg-gray-100 dark:text-slate-200 dark:bg-slate-800 border-b border-gray-200 dark:border-slate-700;
+	}
+
+	td {
+		@apply py-3 px-4 text-gray-700 border-b border-gray-100 dark:text-slate-300 dark:border-slate-800;
+	}
+
+	tr:last-child td {
+		@apply border-b-0;
+	}
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #cbd5e1;
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #a0aec0;
+}
+
+/* Dark theme scrollbar */
+.dark ::-webkit-scrollbar-track {
+	background: #1e293b;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+	background: #475569;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+	background: #64748b;
+}

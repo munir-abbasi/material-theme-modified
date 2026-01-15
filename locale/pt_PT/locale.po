@@ -1,0 +1,100 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-03T06:56:49-07:00\n"
+"Language-Team: Portuguese (Portugal) <http://translate.pkp.sfu.ca/projects/ojs/themes-"
+"material/de/>\n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.9.1\n"
+
+msgid "plugins.themes.material.name"
+msgstr "Material Tema"
+
+msgid "plugins.themes.material.option.font.system"
+msgstr "System Default"
+
+msgid "plugins.themes.material.description"
+msgstr "Este tema implementa o tema material."
+
+msgid "plugins.themes.material.option.font.label"
+msgstr "Fonte"
+
+msgid "plugins.themes.material.option.colour.label"
+msgstr "Cor"
+
+msgid "plugins.themes.material.option.colour.description"
+msgstr "Escolha uma cor para o cabeçalho."
+
+msgid "plugins.themes.material.option.showDescriptionInJournalIndex.option"
+msgstr "Mostre o resumo do diário na página inicial."
+
+msgid "plugins.themes.material.option.useHomepageImageAsHeader.label"
+msgstr "Imagem de fundo do cabeçalho"
+
+msgid "plugins.themes.material.option.useHomepageImageAsHeader.description"
+msgstr "Quando uma imagem da página inicial for carregada, exiba-a no plano de fundo do cabeçalho, em vez de sua posição normal na página inicial."
+
+msgid "plugins.themes.material.option.useHomepageImageAsHeader.option"
+msgstr "Mostre a imagem da página inicial como plano de fundo do cabeçalho."
+
+msgid "plugins.themes.material.option.displayStats.label"
+msgstr ""
+
+msgid "plugins.themes.material.option.displayStats.none"
+msgstr ""
+
+msgid "plugins.themes.material.option.displayStats.bar"
+msgstr ""
+
+msgid "plugins.themes.material.option.displayStats.line"
+msgstr ""
+
+msgid "plugins.themes.material.displayStats.monthInitials"
+msgstr ""
+
+msgid "plugins.themes.material.displayStats.downloads"
+msgstr ""
+
+msgid "plugins.themes.material.displayStats.noStats"
+msgstr ""
+
+msgid "plugins.themes.material.makeSubmission"
+msgstr "Enviar artigo"
+
+msgid "plugins.themes.material.option.disablePrefixAndTitle.label"
+msgstr "Desativar o prefixo do título do artigo"
+
+msgid "plugins.themes.material.option.disablePrefixAndTitle.description"
+msgstr "Desative o prefixo do título do artigo."
+
+msgid "plugins.themes.material.option.disablePrefixAndTitle.option"
+msgstr "Desative o prefixo do título do artigo."
+
+msgid "plugins.themes.material.option.disableArticleSubtitle.label"
+msgstr "Desativar subtítulo do artigo"
+
+msgid "plugins.themes.material.option.disableArticleSubtitle.description"
+msgstr "Desative o subtítulo do artigo."
+
+msgid "plugins.themes.material.option.disableArticleSubtitle.option"
+msgstr "Desative o subtítulo do artigo."
+
+msgid "plugins.themes.material.option.issueArchiveColumns.label"
+msgstr "Número de colunas na página Arquivo de problemas"
+
+msgid "plugins.themes.material.option.issueArchiveColumns.description"
+msgstr "Insira o número de colunas, o valor deve ser um número positivo"
+
+msgid "plugins.themes.material.option.primaryMenu.label"
+msgstr "Menu principal"
+
+msgid "plugins.themes.material.option.primaryMenu.vertical"
+msgstr "Vertical"
+
+msgid "plugins.themes.material.option.primaryMenu.horizontal"
+msgstr "Horizontal"
